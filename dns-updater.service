@@ -1,0 +1,8 @@
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/dns-updater
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
