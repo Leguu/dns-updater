@@ -4,6 +4,8 @@ set -e
 
 ./build.sh
 
+sudo systemctl stop dns-updater || true
+
 sudo cp dns-updater /usr/local/bin/dns-updater
 
 sudo cp dns-updater.service /etc/systemd/system/dns-updater.service
